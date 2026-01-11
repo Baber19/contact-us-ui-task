@@ -174,7 +174,7 @@ class Home extends StatelessWidget {
                               ),
                               SizedBox(width: 30),
                               Text(
-                                "Jairpur",
+                                "Jaipur",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -782,7 +782,7 @@ class Home extends StatelessWidget {
             ),
             SizedBox(height: 70),
             Container(
-              height: screenHeight * 1,
+              height: screenHeight * 1.25,
               width: screenWidth,
               decoration: BoxDecoration(color: Colors.blue),
               child: Padding(
@@ -898,6 +898,110 @@ class Home extends StatelessWidget {
                           "FAQ's",
                           style: TextStyle(fontSize: 17, color: Colors.white),
                         ),
+                        SizedBox(height: 60),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 2,
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Icon(
+                                Icons.facebook,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 2,
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Icon(
+                                Icons.facebook,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 2,
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Icon(
+                                Icons.facebook,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 2,
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Icon(
+                                Icons.facebook,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  width: 2,
+                                  color: Colors.white,
+                                ),
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              child: Icon(
+                                Icons.facebook,
+                                color: Colors.white,
+                                size: 30,
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(height: 40,),
+                        Container(
+                          height: 1,
+                          width: 400,
+                          color: Colors.white,
+                        ),
+                        SizedBox(height: 40,),
+                        Text("   Copyright 2026, All Rights Reserved By WsCube Tech\nVersion 3.2.55",textAlign: TextAlign.center,style: TextStyle(
+                          color: Colors.white,fontSize: 15
+                        ),)
                       ],
                     ),
                   ],

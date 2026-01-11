@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
-
 }
 
 class MyApp extends StatelessWidget {
@@ -11,41 +10,45 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Home());
   }
 }
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  height: 30,
-                  width: 40,
-                  color: Colors.black,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 30,
-                  width: 100,
-                  color: Colors.green,
-                )
-              ],
-            )
-          ],
-        ),
-      ),
+
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    return Scaffold(
+     body: Column(
+       children: [
+         Container(
+           height: screenHeight*0.4,
+           width: screenWidth,
+           color: Colors.purple,
+         ),
+         SizedBox(height: 40,),
+         Padding(
+           padding: const EdgeInsets.only(left: 15.0,right: 15),
+           child: Column(
+             crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+               Text("Visit Our Career Schools",style: TextStyle(),),
+
+               Container(height: screenHeight*0.5,width: screenWidth,
+               color: Colors.green,),
+
+             ]
+             ,
+           ),
+         )
+       ],
+     ),
+
     );
   }
 }

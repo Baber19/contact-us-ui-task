@@ -827,7 +827,7 @@ class Home extends StatelessWidget {
                         ),
                         SizedBox(height: 8),
                         Text(
-                          "Self-Paced Courses",
+                          "Self-Paced Courses-",
                           style: TextStyle(fontSize: 17, color: Colors.white),
                         ),
                         SizedBox(height: 8),

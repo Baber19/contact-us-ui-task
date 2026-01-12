@@ -691,9 +691,10 @@ class Home extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       TextField(
-                        textAlign: TextAlign.left,
+                        maxLines: 5,
                         decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(vertical: 80),
+                          alignLabelWithHint: true,
+
                           filled: true,
                           fillColor: Colors.white,
                           hintText: "Type your message here",
